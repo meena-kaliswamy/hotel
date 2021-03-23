@@ -3,6 +3,7 @@ body {
   background-color: #FFF5F0;
   color: #FFF5F0;
   font-family: 'Arapey', serif;
+  overflow-x: hidden;
 }
 
 p {
