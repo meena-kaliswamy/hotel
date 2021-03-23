@@ -1,0 +1,318 @@
+/* HTML elements */
+body {
+  background-color: #FFF5F0;
+  color: #FFF5F0;
+  font-family: 'Arapey', serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #284350;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #687b84;
+}
+
+/* Container */
+.container-fluid {
+  padding: 10% 5% 5% 5%;
+  position: relative;
+}
+
+/* Title Page */
+#header {
+  background: url('images/nature.PNG') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.header-box {
+  background-color: #C28A6D;
+  opacity: 0.93;
+  padding: 100px;
+
+  /* positioning */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+  /* sizing */
+  height: 95vh;
+  width: 50%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bino {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 18vw;
+}
+
+.title {
+  font-family: 'Marcellus', serif;
+  font-size: 7vw;
+  letter-spacing: 3px;
+}
+
+.slogan {
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 3.6vw;
+}
+
+/* Navbar */
+.navbar {
+  font-family: 'Arapey', serif;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.navbar-toggler {
+  background: #C28A6D;
+  margin: auto;
+  margin-right: 0;
+}
+
+.nav-item {
+  font-size: 25px;
+}
+
+.nav-link {
+  background-color: #284350;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px 30px;
+}
+
+.nav-item.nav-link.separation-dot {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-link.item-1 {
+  border-top-left-radius: 50px;
+}
+
+.nav-link.item-2 {
+  border-bottom-right-radius: 50px;
+}
+
+/* Features Page */
+.feature-title {
+  color: #243C48;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 5vw;
+  font-weight: bold;
+  transition: transform 0.6s;
+}
+
+.feature-img {
+  object-fit: cover;
+  position: relative;
+  height: 17vw;
+  width: 27vw;
+  z-index: 1;
+}
+
+.feature-info {
+  color: #85A984;
+  font-size: 1.22vw;
+}
+
+.circle {
+  border: 14px solid #C28A6D;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.6s;
+
+  /* positioning */
+  position: relative;
+  bottom: 16%;
+  margin: auto;
+  text-align: right;
+
+  /* sizing */
+  opacity: 70%;
+  padding: 20% 12% 10% 10%;
+  height: 25vw;
+  width: 25vw;
+}
+
+.circle:hover, .circle:active {
+  background-color: #e5eeeb;
+  transform: scale(1.1);
+}
+
+.circle:hover>.feature-title {
+  color: #0a1215;
+  transform: translateX(-50px);
+}
+
+/* Contact Page */
+#contact {
+  background: url('images/contact-image.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFF5F0;
+  letter-spacing: 4px;
+  padding: 40px;
+}
+
+.contact-box {
+  background-color: #284350;
+  opacity: 0.9;
+  margin: auto;
+  padding: 40px;
+  width: 45%;
+}
+
+.contact-heading {
+  color: #C28A6D;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 120px;
+  text-align: right;
+}
+
+.contact-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact-info {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+/* Footer */
+#footer {
+  color: #284350;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Media Queries */
+
+/* Adjusts header box and it's content */
+@media only screen and (max-width: 1200px) {
+
+  /* Header Page */
+  .header-box {
+    width: 100%;
+    height: 60vh;
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 10vw;
+  }
+
+  .slogan {
+    font-size: 50px;
+  }
+
+  .bino {
+    z-index: 1;
+    top: 32%;
+    right: 6%;
+    width: 10vw;
+  }
+}
+
+/* Adjusts header box, navbar toggler, feature boxes, and contact content. */
+@media only screen and (max-width: 768px) {
+
+  /* Header Page */
+  .title {
+    font-size: 14vw;
+  }
+
+  .slogan {
+    font-size: 40px;
+  }
+
+  .bino {
+    width: 16vw;
+  }
+
+  /* Navbar */
+  .nav-item {
+    font-size: 15px;
+    padding-top: 10px;
+    z-index: 1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 15px;
+  }
+
+  .nav-link {
+    border-radius: 20px;
+  }
+
+  .separation-dot {
+    display: none;
+  }
+
+  /* Features Page */
+  .feature-img {
+    height: 60vw;
+    width: 98vw;
+  }
+
+  .feature-title {
+    font-size: 15vw;
+  }
+
+  .feature-info {
+    font-size: 3.5vw;
+  }
+
+  .circle {
+    border: 10px solid #C28A6D;
+    width: 80vw;
+    height: 80vw;
+  }
+
+  /* Contact Page */
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 10vw;
+  }
+
+  .contact-title {
+    font-size: 3.5vw;
+  }
+
+  .contact-info {
+    font-size: 3vw;
+  }
+}
